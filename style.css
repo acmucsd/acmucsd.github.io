@@ -1,0 +1,79 @@
+html {
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-align: center;
+}
+
+h1 {
+  color: #22ACEA;
+  font-family: 'Nunito', sans-serif;
+  font-size: 6rem;
+  line-height: 6rem;
+  margin: 0;
+}
+
+h2 {
+  color: #888888;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.4rem;
+  text-shadow: none;
+}
+
+.mobile {
+  display: inline;
+}
+
+.non-mobile {
+  display: none;
+}
+
+#content {
+  margin-top: 5vh;
+  text-shadow: 2px 2px 2px #CCCCCC;
+}
+
+#text {
+  display: inline-block;
+}
+
+#logo {
+  display: inline-block;
+  width: 10rem;
+  height: 10rem;
+}
+
+#particles-js {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+
+  body {
+    text-align: left;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .non-mobile {
+    display: inline;
+  }
+
+  #content {
+    margin-left: 5vw;
+    margin-top: 30vh;
+  }
+}
