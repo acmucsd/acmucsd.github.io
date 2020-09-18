@@ -1,5 +1,6 @@
 html {
-  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+  color: #333;
   height: 100%;
   width: 100%;
   -webkit-touch-callout: none;
@@ -11,18 +12,19 @@ html {
 }
 
 h1 {
-  color: #22ACEA;
-  font-family: 'Nunito', sans-serif;
-  font-size: 6rem;
-  line-height: 6rem;
+  font-size: 3rem;
+  line-height: 3rem;
   margin: 0;
 }
 
 h2 {
-  color: #888888;
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   text-shadow: none;
+  font-weight: 400;
+}
+
+button:focus {
+  outline: none;
 }
 
 .mobile {
@@ -33,19 +35,53 @@ h2 {
   display: none;
 }
 
+.non-b {
+  font-weight: 400;
+}
+
 #content {
   margin-top: 5vh;
-  text-shadow: 2px 2px 2px #CCCCCC;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 
 #text {
   display: inline-block;
 }
 
+.join {
+  font-family: 'DM Sans', sans-serif;
+  margin-top: 3vh;
+  background-color: #FFFFFF;
+  border: #333 3px solid;
+  border-radius: 30px;
+  height: 65px;
+  width: 250px;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.join:hover {
+  background-color: #333;
+  color: #fff;
+  transform: translatey(-1px);
+  transition: 200ms;
+  cursor: pointer;
+}
+
+
 #logo {
-  display: inline-block;
   width: 10rem;
   height: 10rem;
+  margin-right: 2vw;
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 #particles-js {
@@ -58,10 +94,28 @@ h2 {
   width: 100%;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 900px) {
 
   body {
     text-align: left;
+  }
+
+  h1 {
+    font-size: 6rem;
+    line-height: 6rem;
+  }
+
+  .countdown {
+    font-size: 2rem;
+  }
+
+  #content {
+    flex-direction: row;
+  }
+
+  #logo {
+    width: 20rem;
+    height: 20rem;
   }
 
   .mobile {
@@ -73,7 +127,7 @@ h2 {
   }
 
   #content {
-    margin-left: 5vw;
+    margin-left: 10vw;
     margin-top: 30vh;
   }
 }
