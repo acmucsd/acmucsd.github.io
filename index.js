@@ -1,6 +1,6 @@
 
 // The time of the Fall Kickoff.
-const deadline = 'January 4 2020 18:00:00 GMT-0700';
+const deadline = 'January 4 2021 18:00:00 GMT-0700';
 
 // Calculate the time remaining.
 function getTimeRemaining(endtime) {
